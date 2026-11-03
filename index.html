@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ff7b68">
+  <meta name="description" content="Você está convidado para comemorar os 16 anos de Luiza Rodrigues!">
+  <title>Luiza faz 16! ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div class="sparkles" aria-hidden="true"><span>✦</span><span>✧</span><span>✦</span><span>✧</span><span>·</span><span>✦</span></div>
+
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Luiza faz 16">L<span>♡</span></a>
+    <div class="topbar-note">UM DIA ESPECIAL ESTÁ CHEGANDO</div>
+    <button class="music-toggle" id="musicToggle" type="button" aria-label="Ativar ou desativar música">
+      <span class="music-dot"></span><span id="musicLabel">MÚSICA</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="page active" id="inicio" aria-labelledby="mainTitle">
+      <div class="hero-card">
+        <div class="pill"><span class="pill-star">✦</span> VOCÊ ESTÁ CONVIDADO(A) <span class="pill-star">✦</span></div>
+        <p class="eyebrow">SAVE THE DATE · 21 NOVEMBRO 2026</p>
+        <h1 id="mainTitle">Luiza faz<br><span>16</span><i>!</i></h1>
+        <p class="hero-subtitle">Uma noite para celebrar, sorrir<br>e criar memórias inesquecíveis.</p>
+
+        <div class="date-card">
+          <div><span class="date-label">SÁBADO</span><strong>21</strong><span class="date-label">NOVEMBRO</span></div>
+          <div class="date-divider"></div>
+          <div class="time-block"><span class="date-label">A PARTIR DAS</span><strong>16:00</strong><span class="date-label">HORAS</span></div>
+        </div>
+
+        <div class="countdown-wrap">
+          <p>FALTAM</p>
+          <div class="countdown" id="countdown">
+            <div><strong id="days">--</strong><span>DIAS</span></div>
+            <b>:</b>
+            <div><strong id="hours">--</strong><span>HORAS</span></div>
+            <b>:</b>
+            <div><strong id="minutes">--</strong><span>MIN</span></div>
+            <b>:</b>
+            <div><strong id="seconds">--</strong><span>SEG</span></div>
+          </div>
+        </div>
+
+        <div class="home-actions">
+          <a class="action-card gift-action" href="#presentes">
+            <span class="action-icon">🎁</span><span><strong>Lista de presentes</strong><small>Uma ideia para me presentear</small></span><span class="action-arrow">↗</span>
+          </a>
+          <a class="action-card place-action" href="#local">
+            <span class="action-icon">📍</span><span><strong>Como chegar</strong><small>Veja o endereço da festa</small></span><span class="action-arrow">↗</span>
+          </a>
+        </div>
+        <p class="footer-note">Sua presença vai deixar esse dia ainda mais especial ♡</p>
+      </div>
+      <div class="side-sticker sticker-one">LET'S<br>PARTY! <span>✷</span></div>
+      <div class="side-sticker sticker-two">SWEET<br>SIXTEEN <span>♡</span></div>
+    </section>
+
+    <section class="page subpage" id="presentes" aria-labelledby="giftTitle">
+      <a class="back-link" href="#inicio">← VOLTAR AO CONVITE</a>
+      <div class="subpage-card">
+        <div class="section-kicker">COM CARINHO, PARA VOCÊ</div>
+        <div class="big-emoji">🎀</div>
+        <h2 id="giftTitle">Lista de <em>presentes</em></h2>
+        <p class="section-intro">O mais importante é ter você comigo nesse dia! Mas, se quiser me presentear, deixei algumas sugestões aqui.</p>
+
+        <div class="gift-list" id="giftList">
+          <!-- EDITE OS PRESENTES NO ARQUIVO script.js -->
+        </div>
+        <div class="gift-message"><span>♡</span> Obrigada por fazer parte desse momento!</div>
+        <a class="primary-button" href="#inicio">VOLTAR AO CONVITE <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="page subpage" id="local" aria-labelledby="placeTitle">
+      <a class="back-link" href="#inicio">← VOLTAR AO CONVITE</a>
+      <div class="subpage-card location-card">
+        <div class="section-kicker">ESTAMOS TE ESPERANDO</div>
+        <div class="big-emoji">📍</div>
+        <h2 id="placeTitle">Onde vai ser a <em>festa?</em></h2>
+        <p class="section-intro">Prepare-se para uma tarde cheia de alegria. Anote o endereço para não perder nenhum momento!</p>
+
+        <div class="venue-card">
+          <div class="venue-top"><span>✦ LOCAL DA COMEMORAÇÃO</span><span class="venue-pin">📍</span></div>
+          <h3>Luiza faz 16 anos</h3>
+          <p id="venueAddress">Rua Consul Orestes Corrêa, 227<br>Guarulhos – SP, Brasil</p>
+          <div class="venue-details">
+            <div><span>📅</span><p><small>DATA</small><strong>21 de novembro de 2026</strong></p></div>
+            <div><span>🕓</span><p><small>HORÁRIO</small><strong>16:00</strong></p></div>
+          </div>
+          <a class="map-button" id="mapLink" href="https://www.google.com/maps/search/?api=1&query=Rua%20Consul%20Orestes%20Corr%C3%AAa%20227%2C%20Guarulhos%2C%20SP%2C%20Brazil" target="_blank" rel="noopener noreferrer">ABRIR NO GOOGLE MAPS <span>↗</span></a>
+        </div>
+        <p class="location-tip">Se possível, chegue no horário para aproveitar tudo desde o começo! ✨</p>
+        <a class="primary-button" href="#inicio">VOLTAR AO CONVITE <span>↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">FEITO COM ♡ PARA UM DIA INESQUECÍVEL · LUIZA RODRIGUES 2026</footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
